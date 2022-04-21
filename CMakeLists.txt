@@ -25,11 +25,11 @@ set(PLUGIN_NAME SwitchBoard)
 set(MODULE_NAME ${NAMESPACE}${PLUGIN_NAME})
 
 set(PLUGIN_SWITCHBOARD_AUTOSTART "true" CACHE BOOL "Automatically start SwitchBoard plugin")
-set(PLUGIN_SWITCHBOARD_DEFAULT ""  CACHE STRING "Callsign of the plugin to be activated in case nothing is active.")
-set(PLUGIN_SWITCH_AMAZON false CACHE BOOL "Enable switch for Amazon plugin")
-set(PLUGIN_SWITCH_COBALT false CACHE BOOL "Enable switch for Cobalt plugin")
+set(PLUGIN_SWITCHBOARD_DEFAULT "ResidentApp"  CACHE STRING "Callsign of the plugin to be activated in case nothing is active.")
+set(PLUGIN_SWITCH_AMAZON "true" CACHE BOOL "Enable switch for Amazon plugin")
+set(PLUGIN_SWITCH_COBALT "true" CACHE BOOL "Enable switch for Cobalt plugin")
 set(PLUGIN_SWITCH_NETFLIX false CACHE BOOL "Enable switch for Netflix plugin")
-set(PLUGIN_SWITCH_WEBKITBROWSER false CACHE BOOL "Enable switch for WebKitBrowser plugin")
+set(PLUGIN_SWITCH_WEBKITBROWSER "true" CACHE BOOL "Enable switch for WebKitBrowser plugin")
 
 # This is a plugin so we need the Plugin configuration section.
 find_package(${NAMESPACE}Plugins REQUIRED)
